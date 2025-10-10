@@ -1,26 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GACHA_GAME
 {
     internal class Gacha
     {
-        // 샘플 캐릭터 생성
-        Character[] CreateSampleCharacters()
-        {
-            return new Character[]
-            {
-                new Character { Name = "비올라", Rarity = Rarity.FiveStar },
-                new Character { Name = "제이", Rarity = Rarity.FourStar },
-                new Character { Name = "헤일러", Rarity = Rarity.ThreeStar },
-                new Character { Name = "효아", Rarity = Rarity.TwoStar },
-                new Character { Name = "수연", Rarity = Rarity.OneStar }
-            };
-        }
-
         // 랜덤 캐릭터 뽑기 - 1명
         public static Character PickUp_1()
         {
@@ -42,8 +25,10 @@ namespace GACHA_GAME
                 return new Character { Name = "효아", Rarity = Rarity.TwoStar };
             else // 49%
                 // 나중엔 여러 1성 캐릭터 중 랜덤으로 뽑히도록 수정 예정
-                return new Character { Name = "수연", Rarity = Rarity.OneStar };
+                return new Character { Name = "서현", Rarity = Rarity.OneStar };
         }
+
+        // 랜덤 캐릭터 뽑기 - 10명 (구현 예정)
         //public Character PickUp_10() { }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GACHA_GAME
+﻿namespace GACHA_GAME
 {
     public enum Rarity
     {
